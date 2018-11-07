@@ -72,13 +72,13 @@ nav li {
     height: 9.23rem;
     background-color: #f9f9f9;
     margin-left: 0.4em;
-    margin-top: 0.34rem;
+    margin-top: 0.32rem;
     border-radius: 0.05rem;
     border: solid 0.01rem #dfe2ee;
 }
 
 .chart-container {
-    width: 14.2rem;
+    width: 13.95rem;
     height: 6.75rem;
     background-color: #fff;
     margin-top: 0.34rem;
@@ -88,7 +88,7 @@ nav li {
 }
 
 .close-container {
-    width: 3.27rem;
+    width: 3.1975rem;
     height: 1.15rem;
     background-color: #fff;
     margin-top: 0.29rem;
@@ -99,7 +99,7 @@ nav li {
 }
 
 .open-container {
-    width: 3.27rem;
+    width: 3.1975rem;
     height: 1.15rem;
     background-color: #fff;
     margin-top: 0.29rem;
@@ -110,7 +110,7 @@ nav li {
 }
 
 .high-container {
-    width: 3.27rem;
+    width: 3.1975rem;
     height: 1.15rem;
     background-color: #fff;
     margin-top: 0.29rem;
@@ -121,7 +121,7 @@ nav li {
 }
 
 .low-container {
-    width: 3.27rem;
+    width: 3.1975rem;
     height: 1.15rem;
     background-color: #fff;
     margin-top: 0.29rem;
@@ -132,7 +132,7 @@ nav li {
 }
 
 .twitterChange-container {
-    width: 4.53rem;
+    width: 4.4rem;
     height: 2.04rem;
     background-color: #fff;
     margin-top: 0.29rem;
@@ -143,22 +143,22 @@ nav li {
 }
 
 .predictedChange-container {
-    width: 4.53rem;
+    width: 4.4rem;
     height: 2.04rem;
     background-color: #fff;
     margin-top: 0.29rem;
-    margin-left: 0.3rem;
+    margin-left: 0.37rem;
     border-radius: 0.05rem;
     border: solid 0.01rem #dfe2ee;
     display: inline-block;
 }
 
 .otherInfo-container {
-    width: 4.53rem;
+    width: 4.4rem;
     height: 2.04rem;
     background-color: #fff;
     margin-top: 0.29rem;
-    margin-left: 0.3rem;
+    margin-left: 0.37rem;
     border-radius: 0.05rem;
     border: solid 0.01rem #dfe2ee;
     display: inline-block;
