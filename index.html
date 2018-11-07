@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no">
+        <title>I hate Trump</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript">
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 1920 * 100 + "px";
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <p id="predictionPage" style="color: #5a64a1;">Prediction</p>
+                        <div id="predictionLine" class="line-active" style="opacity: 1;"></div>
+                    </li>
+                    <li style="margin-left: 0.8rem;">
+                        <p id="historyPage">History</p>
+                        <div id="historyLine" class="line-active"></div>
+                    </li>
+                    <li style="margin-left: 0.8rem;">
+                        <p id="analysisPage">Analysis</p>
+                        <div id="analysisLine" class="line-active"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="predictionSection" style="display: block;">
+            <div style="display: inline-block;">
+                <div class="trading-container">
+                    <div class="trading-indicator"></div>
+                    <div style="margin-top: 0.17rem; margin-left: 1.27rem;">
+                        <p class="trading-title">Trading Advice</p>
+                    </div>
+                    <div style="margin-top: 0.49rem; margin-left: 0.38rem;  font-size: 0;">
+                        <div style="display: inline-block;">
+                            <p class="trading-subtitle">Price Change</p>
+                        </div>
+                        <div style="margin-left: 0.22rem; display: inline-block; vertical-align: top;">
+                            <p class="trading-data" style="font-size: 0.3rem;">+1.88<span style="color: #a2a9c4;"> / </span>+0.7%</p>
+                            <p style="font-family: Helvetica; font-size: 0.15rem; color: #a9adbc; text-align: right;">Price prediction in 30 min</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.35rem; margin-left: 0.38rem; font-size: 0;">
+                        <div style="display: inline-block;">
+                            <p class="trading-subtitle">Limit Buy at</p>
+                        </div>
+                        <div style="display: inline-block; margin-left: 1.1rem;">
+                            <p class="trading-data">USD 268.91</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.37rem; margin-left: 0.38rem; font-size: 0;">
+                        <div style="display: inline-block;">
+                            <p class="trading-subtitle">Limit Sell at</p>
+                        </div>
+                        <div style="display: inline-block; margin-left: 1.1rem;">
+                            <p class="trading-data">USD 268.91</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets-container1">
+                    <div style="width: 4rem; height: 0.64rem; background-color: #fff; border-top-right-radius: 0.05rem; border-top-left-radius: 0.05rem; border-bottom: solid 0.01rem #dfe2ee;">
+                        <p class="tweet-title">Recent Tweets</p>
+                    </div>
+                    <div style="margin-left: 0.15rem;">
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; font-size: 0;">
+                <div class="chart-container">
+                </div>
+                <div class="close-container" style="vertical-align: top; font-size: 0;">
+                    <div class="close-indicator"></div>
+                    <div style="display: inline-block; vertical-align: top;">
+                        <p class="subtitle1">Previous Close</p>
+                        <p class="data">USD 263.66</p>
+                    </div>
+                </div>
+                <div class="open-container" style="vertical-align: top; font-size: 0;">
+                    <div class="open-indicator"></div>
+                    <div style="display: inline-block; vertical-align: top;">
+                        <p class="subtitle1">Open</p>
+                        <p class="data">USD 263.66</p>
+                    </div>
+                </div>
+                <div class="high-container" style="vertical-align: top; font-size: 0;">
+                    <div class="high-indicator"></div>
+                    <div style="display: inline-block; vertical-align: top;">
+                        <p class="subtitle1">High</p>
+                        <p class="data">USD 263.66</p>
+                    </div>
+                </div>
+                <div class="low-container" style="vertical-align: top; font-size: 0;">
+                    <div class="low-indicator"></div>
+                    <div style="display: inline-block; vertical-align: top;">
+                        <p class="subtitle1">Low</p>
+                        <p class="data">USD 263.66</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="historySection" style="display: none;">
+            <div style="display: inline-block;">
+                <div class="tweets-container2">
+                    <div style="width: 4rem; height: 0.64rem; background-color: #fff; border-top-right-radius: 0.05rem; border-top-left-radius: 0.05rem; border-bottom: solid 0.01rem #dfe2ee;">
+                        <p class="tweet-title">Relevant Tweets</p>
+                    </div>
+                    <div style="margin-left: 0.15rem;">
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                        <div class="tweets"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; font-size: 0;">
+                <div class="chart-container">
+<!--
+                    <p class="chart-title">History Stock Price</p>
+                    <svg width="1000" height="400" style="margin-left: 1.875rem; margin-top: 2.188rem;"></svg>
+-->
+                </div>
+                <div class="twitterChange-container" style="vertical-align: top;">
+                    <div style="margin-top: 0.25rem;">
+                        <p class="subtitle2" style="margin-left: 0.36rem; display: inline;">Twitter-influenced Changes</p>
+                        <p style="font-family: Helvetica; font-size: 0.36rem; letter-spacing: 0.015rem; color: #62667a; display: inline; margin-left: 0.51rem;">16</p>
+                    </div>
+                    <div style="margin-top: 0.4rem;">
+                        <p class="subtitle3" style="margin-left: 0.35rem; display: inline;">Positive <span style="font-family: Helvetica; font-size: 0.16rem; font-weight: bold; letter-spacing: 0.007rem; color: #62667a;">10</span></p>
+                        <p class="subtitle3" style="display: inline; margin-left: 1.71rem;">Negative <span style="font-family: Helvetica; font-size: 0.16rem; font-weight: bold; letter-spacing: 0.007rem; color: #62667a;">6</span></p>
+                    </div>
+                </div>
+                <div class="predictedChange-container" style="vertical-align: top;">
+                    <div style="margin-top: 0.25rem;">
+                        <p class="subtitle2" style="margin-left: 0.36rem; display: inline;">Predicted Changes</p>
+                        <p style="font-family: Helvetica; font-size: 0.36rem; letter-spacing: 0.015rem; color: #62667a; display: inline; margin-left: 0.51rem;">16</p>
+                    </div>
+                    <div style="margin-top: 0.4rem;">
+                        <p class="subtitle3" style="margin-left: 0.35rem; display: inline;">Positive <span style="font-family: Helvetica; font-size: 0.16rem; font-weight: bold; letter-spacing: 0.007rem; color: #62667a;">10</span></p>
+                        <p class="subtitle3" style="display: inline; margin-left: 1.71rem;">Negative <span style="font-family: Helvetica; font-size: 0.16rem; font-weight: bold; letter-spacing: 0.007rem; color: #62667a;">6</span></p>
+                    </div>
+                </div>
+                <div class="otherInfo-container" style="vertical-align: top;">
+                    <p class="subtitle2" style="margin-top: 0.35rem; margin-left: 0.36rem;">Classification Accuracy</p>
+                    <p class="subtitle2" style="margin-top: 0.44rem; margin-left: 0.36rem;">Mean Square Error</p>
+                </div>
+            </div>
+        </section>
+        <section id="analysisSection" style="display: none;"></section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

@@ -1,0 +1,330 @@
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/*navigation bar*/
+
+nav {
+    width: 100%;
+    height: 0.89rem;
+    background-color: #fff;
+    border: solid 1px #dfe2ee;
+}
+
+nav ul {
+    font-family: Arial;
+    font-size: 0.2rem;
+    letter-spacing: 0.008rem;
+    color: #62667a;
+    list-style: none;
+    margin: 0;
+    padding-top: 0.33rem;
+    padding-left: 1.29rem;
+    
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.line-active {
+    width: 1.04rem;
+    border-bottom: solid 0.05rem #5a64a1;
+    position: absolute;
+    top: 0.57rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+/*containers*/
+
+.trading-container {
+    width: 4rem;
+    height: 3.27rem;
+    background-color: #fff;
+    margin-left: 0.4rem;
+    margin-top: 0.32rem;
+/*    padding: 0;*/
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+}
+
+.tweets-container1 {
+    width: 4rem;
+    height: 5.39rem;
+    background-color: #f9f9f9;
+    margin-left: 0.4rem;
+    margin-top: 0.3rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+}
+
+.tweets-container2 {
+    width: 4rem;
+    height: 9.23rem;
+    background-color: #f9f9f9;
+    margin-left: 0.4em;
+    margin-top: 0.34rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+}
+
+.chart-container {
+    width: 14.2rem;
+    height: 6.75rem;
+    background-color: #fff;
+    margin-top: 0.34rem;
+    margin-left: 0.2rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+}
+
+.close-container {
+    width: 3.27rem;
+    height: 1.15rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.2rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.open-container {
+    width: 3.27rem;
+    height: 1.15rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.37rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.high-container {
+    width: 3.27rem;
+    height: 1.15rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.37rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.low-container {
+    width: 3.27rem;
+    height: 1.15rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.37rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.twitterChange-container {
+    width: 4.53rem;
+    height: 2.04rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.2rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.predictedChange-container {
+    width: 4.53rem;
+    height: 2.04rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.3rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+.otherInfo-container {
+    width: 4.53rem;
+    height: 2.04rem;
+    background-color: #fff;
+    margin-top: 0.29rem;
+    margin-left: 0.3rem;
+    border-radius: 0.05rem;
+    border: solid 0.01rem #dfe2ee;
+    display: inline-block;
+}
+
+/*colorful indicator*/
+
+.trading-indicator {
+    width: 4rem;
+    height: 0.1rem;
+    background-color: #4eb784;
+    margin: 0;
+    padding: 0;
+}
+
+.close-indicator {
+    width: 0.07rem;
+    height: 1.15rem;
+    background-color: #5a64a1;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.open-indicator {
+    width: 0.07rem;
+    height: 1.15rem;
+    background-color: #5a64a1;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.high-indicator {
+    width: 0.07rem;
+    height: 1.15rem;
+    background-color: #0b9c55;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.low-indicator {
+    width: 0.07rem;
+    height: 1.15rem;
+    background-color: #d23f31;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+/*detail style*/
+
+.trading-title {
+    font-family: Avenir;
+    font-size: 0.2rem;
+    font-weight: 500;
+    letter-spacing: 0.008rem;
+    color: #212121;
+}
+
+.trading-subtitle {
+    font-family: Helvetica;
+    font-size: 0.2rem;
+    color: #62667a;
+}
+
+.trading-data {
+    font-family: Helvetica;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #4eb784;
+}
+
+.tweet-title {
+    font-family: Avenir;
+    font-size: 0.2rem;
+    font-weight: 500;
+    letter-spacing: 0.008px;
+    color: #212121;
+    padding-top: 0.2rem;
+    margin-left: 1.29rem;
+}
+
+.tweets {
+    width: 3.7rem;
+    height: 1.17rem;
+    background-color: #fff;
+    border: solid 0.01rem #dfe2ee;
+    margin-top: 0.09rem;
+}
+
+.subtitle1 {
+    font-family: Helvetica;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #62667a;
+    margin-top: 0.19rem;
+    margin-left: 0.27rem;
+}
+
+.subtitle2 {
+    font-family: Helvetica;
+    font-size: 0.2rem;
+    letter-spacing: 0.008rem;
+    color: #62667a;
+/*
+    margin-top: 0.35rem;
+    margin-left: 0.36rem;
+*/
+}
+
+.subtitle3 {
+    font-family: Helvetica;
+    font-size: 0.16rem;
+    letter-spacing: 0.007rem;
+    color: #62667a;
+}
+
+.data {
+    font-family: Helvetica;
+    font-size: 0.26rem;
+    color: #a2a9c4;
+    margin-top: 0.16rem;
+    margin-left: 0.27rem;
+}
+
+/*chart info*/
+
+.chart-title {
+    font-family: Avenir;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #212121;
+    margin-top: 1.625rem;
+    margin-left: 37.31rem;
+}
+
+.line-plot {
+    fill: none;
+    stroke: #4eb784;
+    stroke-width: 0.125rem;
+}
+
+.axis path {
+    stroke: #a2a9c4;
+    stroke-width: 0.125rem;
+}
+
+.y path {
+    stroke: none;
+}
+
+.axis text {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: 500;
+    fill: #828a9f;
+}
+
+.stock-name {
+    font-family: Helvetica;
+    font-size: 1.5rem;
+    letter-spacing: 0.0625rem;
+    fill: #212121;
+}
+
+
