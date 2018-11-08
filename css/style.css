@@ -290,23 +290,21 @@ nav li {
 
 .chart-title {
     font-family: Avenir;
-    font-size: 1.25rem;
+    font-size: 0.2rem;
     font-weight: 500;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.008rem;
     color: #212121;
-    margin-top: 1.625rem;
-    margin-left: 37.31rem;
 }
 
 .line-plot {
     fill: none;
     stroke: #4eb784;
-    stroke-width: 0.125rem;
+    stroke-width: 0.04rem;
 }
 
 .axis path {
     stroke: #a2a9c4;
-    stroke-width: 0.125rem;
+    stroke-width: 0.04rem;
 }
 
 .y path {
@@ -315,15 +313,15 @@ nav li {
 
 .axis text {
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 0.2rem;
     font-weight: 500;
     fill: #828a9f;
 }
 
 .stock-name {
     font-family: Helvetica;
-    font-size: 1.5rem;
-    letter-spacing: 0.0625rem;
+    font-size: 0.24rem;
+    letter-spacing: 0.001rem;
     fill: #212121;
 }
 
