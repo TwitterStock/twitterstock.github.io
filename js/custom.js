@@ -56,13 +56,69 @@ d3.csv("./stock_data/2015.csv", function(error, dataset) {
     console.log(xExtent);
     console.log(yExtent);
     
+    var xMin = d3.min(dayData, function(d) {
+        return parseFloat(d.num_minutes);
+    });
+    
+    var xMax = d3.max(dayData, function(d) {
+        return parseFloat(d.num_minutes);
+    });
+    
+    console.log(xMin);
+    console.log(xMax);
+    
+    
+    
+    var zoom = d3.zoom()
+        .scaleExtent([1, 10])
+        .on("zoom", zoomed);
+    
     var xScale = d3.scaleLinear()
-        .domain(xExtent)
+        .domain([xMin / 2, xMax / 2])
         .range([40, 1000]);
     
-    yScale = d3.scaleLinear()
+    var yScale = d3.scaleLinear()
         .domain(yExtent)
         .range([360, 40]);
+    
+    var yGrid = d3.axisLeft(yScale)
+        .ticks(5)
+        .tickSize(-960)
+        .tickFormat("");
+    
+    var xAxis = d3.axisBottom(xScale)
+        .ticks(5);
+    
+    var yAxis = d3.axisLeft(yScale)
+        .ticks(6);
+    
+    var gx = historySVG.append("g")
+        .attr("class", "axis x")
+        .attr("transform", "translate(0, 360)")
+        .call(xAxis);
+    
+    var gy = historySVG.append("g")
+        .attr("class", "axis y")
+        .attr("transform", "translate(40, 0)")
+        .call(yAxis);
+    
+    historySVG.append("g")
+        .attr("class", "grid")
+        .attr("transform", "translate(40, 0)")
+        .call(yGrid);
+    
+    historySVG.append("text")
+        .attr("class", "stock-name")
+        .attr("transform", "translate(-5, 15)")
+        .text("SPDR S&P 500 ETF TRUST");
+    
+    
+    historySVG.append("clipPath")
+        .attr("id", "clip")
+        .append("rect")
+        .attr("width", "960")
+        .attr("height", "320")
+        .attr("transform", "translate(40, 40)");
     
     var lineInterpolate = d3.line()
         .x(function(d) {
@@ -73,6 +129,7 @@ d3.csv("./stock_data/2015.csv", function(error, dataset) {
         });
     
     var lineG = historySVG.append("g")
+        .attr("clip-path", "url(#clip)")
         .attr("class", "line");
     
     lineG.selectAll(".line-plot")
@@ -82,29 +139,24 @@ d3.csv("./stock_data/2015.csv", function(error, dataset) {
         .attr("class", "line-plot")
         .attr("d", lineInterpolate);
     
-    var xAxis = d3.axisBottom(xScale)
-        .ticks(5);
     
-    var yAxis = d3.axisLeft(yScale)
-        .ticks(5);
     
-    historySVG.append("g")
-        .attr("class", "axis x")
-        .attr("transform", "translate(0, 360)")
-        .call(xAxis);
+    historySVG.call(zoom);
     
-    historySVG.append("g")
-        .attr("class", "axis y")
-        .attr("transform", "translate(40, 0)")
-        .call(yAxis);
-    
-    historySVG.append("text")
-        .attr("class", "stock-name")
-        .attr("transform", "translate(-5, 15)")
-        .text("SPDR S&P 500 ETF TRUST");
+    function zoomed() {
+        d3.selectAll(".line-plot")
+            .attr("transform", d3.event.transform);
+        
+        d3.selectAll(".line-plot").style("stroke-width", 2/d3.event.transform.k);
+        
+        gx.call(xAxis.scale(d3.event.transform.rescaleX(xScale)));
+        
+        gy.call(yAxis.scale(d3.event.transform.rescaleY(yScale)));
+    }
         
     
 });
+
 
 $("#predictionPage").click(function() {
     $(this).css("color", "#5a64a1");

@@ -318,6 +318,15 @@ nav li {
     fill: #828a9f;
 }
 
+.grid line {
+    stroke: #dfe2ee;
+    shape-rendering: crispEdges;
+}
+
+.grid .domain {
+    display: none;
+}
+
 .stock-name {
     font-family: Helvetica;
     font-size: 0.24rem;
