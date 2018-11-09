@@ -1,17 +1,16 @@
-//$.ajax({
-//    url: "https://twitter-stock.appspot.com/query?kind=spy&start=2015-07-02-004&end=2015-07-02-008",
-//    dataType: "json",
-//    type: "GET",
-//    success: function(data) {
-//        console.log(data);
-//        
-//        
-//        
-//    },
-//    error: function() {
-//        console.log("ERROR!");
-//    }
-//});
+$.ajax({
+    url: "https://twitter-stock.appspot.com/queryrange?kind=spy&start=2015-07-02-004&end=2015-07-02-008",
+    dataType: "json",
+    type: "GET",
+    success: function(data) {
+        console.log(data);
+        
+        
+    },
+    error: function() {
+        console.log("ERROR!");
+    }
+});
 
 
 
